@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+}
+h1 {
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+}
+i {
+    font-size: 15rem;
+    padding: 1.5rem;
+}
+.row .col-sm {
+
+    border-radius: 1rem;
+    margin: 0 3rem 2rem;
+    background-image: linear-gradient(to bottom right, #dfd3c37c, #d0b8a878, #9e767686);
+}
+.btn-start {
+    margin: 2rem 0 0;
+    width: 15rem;
+    height: 4rem;
+    font-size: 2rem;
+}
