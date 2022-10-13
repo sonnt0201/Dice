@@ -1,6 +1,15 @@
 var score = [];
-var playerName = [];
+var playerName = ['Player 1', 'Player 2'];
+const nameTextFields = document.getElementsByClassName("player-name");
+for (element of nameTextFields){
+  element.addEventListener("change", inputCheck)
+}
 
+function inputCheck() {
+  for (let index = 0; index < nameTextFields.length; index++) {
+    playerName[index] = nameTextFields[index].value.length > 0? nameTextFields[index].value : `Player ${index + 1}`;
+  }
+}
 // When click Start Button
 function startGame() {
   for (let i = 0; i < 10; i++) {
@@ -22,11 +31,11 @@ function dicing(times) {
       if (score[0] > score[1]) {
         document
           .getElementsByClassName("winner-announcement")[0]
-          .innerHTML = "The Winner is Player 1";
+          .innerHTML = `The Winner is ${playerName[0]}`;
       } else if (score[0] < score[1]) {
         document
           .getElementsByClassName("winner-announcement")[0]
-          .innerHTML = "The winner is Player 2";
+          .innerHTML = `The winner is ${playerName[1]}`;
       } else {
         document
           .getElementsByClassName("winner-announcement")[0]
@@ -67,3 +76,11 @@ function setValue(value, playerIndex) {
     .getElementsByClassName("dice")[playerIndex]
     .className = `fa-solid fa-dice-${stringValue} dice`;
 }
+
+function reset() {
+  for (let index = 0; index < playerName.length; index ++) {
+    setValue(0, index);
+  }
+  document.getElementsByClassName('winner-announcement')[0].innerHTML = 'The winner is'
+}
+

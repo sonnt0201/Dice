@@ -8,17 +8,37 @@ h1 {
     font-size: 4rem;
     font-weight: bolder;
     font-style: italic;
+    color:#083AA9;
 }
+h1:hover {
+    text-shadow:
+    0 0 50px #1a3dd940,            
+    -10px 0 80px #1336d13a,        
+    10px 0 80px #aac4ff2f; 
+}
+
 
 input[type="text"] {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: bolder;
     width: 50%;
+    height: 4rem;
     border-radius: 2rem;
     border: 0;
     background: none;
 }
-
+input[type="text"]:hover {
+  box-shadow:
+    inset 0 0 200px #fff,      /* inner white */
+    inset 20px 0 20px #f0f,   /* inner left magenta short */
+    inset -20px 0 20px #0ff,  /* inner right cyan short */
+    inset 20px 0 100px #f0f,  /* inner left magenta broad */
+    inset -20px 0 100px #0ff, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 40px rgba(255, 0, 255, 0.48),        /* outer left magenta */
+    10px 0 40px rgba(0, 255, 255, 0.466);         /* outer right cyan */
+}
 
 .dice {
     font-size: 15rem;
@@ -26,6 +46,14 @@ input[type="text"] {
     background: -webkit-radial-gradient(#083AA9, #002E94, #1C3879, #47B5FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.dice:hover {
+    background-clip: default;
+    border-radius: 1rem;
+    text-shadow:
+    0 0 50px #d0ff8d45,            
+    -10px 0 80px #a8e8903d,        
+    10px 0 80px #749f824b; 
 }
 
 .row .col-sm {
@@ -49,3 +77,26 @@ input[type="text"] {
     height: 4rem;
     font-size: 2rem;
 }
+
+.winner-announcement {
+    width: 50%;
+    margin : 1rem auto 1rem;
+    font-size: 3rem;
+    font-weight: bolder;
+    background: -webkit-radial-gradient(#E80F88, #AF0171, #790252, #CD104D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.winner-announcement:hover {
+    text-shadow:
+    0 0 50px #fff,            
+    -10px 0 80px #f0f,       
+    10px 0 80px #0ff;
+}
+.text-for-input {
+    background: -webkit-radial-gradient(#FD841F, #E14D2A, #CD104D, #9C2C77);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
