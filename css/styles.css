@@ -1,6 +1,7 @@
 body {
     text-align: center;
 }
+
 h1 {
     padding: 1rem;
     font-family: 'Montserrat', sans-serif;
@@ -8,16 +9,32 @@ h1 {
     font-weight: bolder;
     font-style: italic;
 }
+
+input[type="text"] {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 50%;
+    border-radius: 2rem;
+    border: 0;
+    background: none;
+}
+
+
 .dice {
     font-size: 15rem;
     padding: 1.5rem;
+    background: -webkit-radial-gradient(#083AA9, #002E94, #1C3879, #47B5FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 .row .col-sm {
 
     border-radius: 1rem;
     margin: 0 3rem 2rem;
     background-image: linear-gradient(to bottom right, #dfd3c37c, #d0b8a878, #9e767686);
 }
+
 .btn-reset {
     margin: 2rem 1rem 0;
     width: 4rem;
@@ -25,10 +42,10 @@ h1 {
     font-size: 2rem;
 
 }
+
 .btn-start {
     margin: 2rem 0 0;
     width: 15rem;
     height: 4rem;
     font-size: 2rem;
 }
-
