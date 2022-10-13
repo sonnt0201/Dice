@@ -16,6 +16,8 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/29b0da3508.js" crossorigin="anonymous">
     </script>
+    
+
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/styles.css">
     <title>Dice game</title>
@@ -28,18 +30,17 @@
     <div class="container">
         <div class="row">
             <div class="col-sm ">
-                <p class="dices" style="text-align: center;">
+                <p  style="text-align: center;">
                     <h3>Player 1</h3>
-                    <i class="fa-solid fa-dice-one"></i>
+                    <i class="fa-solid fa-dice-one dice"></i>
                 </p>
 
             </div>
             <div class="col-sm ">
-                <p class="dices" style="text-align: center;">
+                <p  style="text-align: center;">
                     <h3>Player 2</h3>
-                    <i class="fa-solid fa-dice-one"></i>
+                    <i class="fa-solid fa-dice-one dice" ></i>
                 </p>
-
             </div>
 
         </div>
@@ -49,10 +50,23 @@
     <h3 class="winner-announcement">
         The winner is: 
     </h3>
-    <button type="button" class="btn btn-outline-success btn-lg btn-start"><b>Start</b> </button>
+
+    <!-- Controller -->
+    <div>
+        <button type="button" class="btn btn-outline-secondary btn-reset">
+            <i class="fa-solid fa-repeat"></i>
+        </button>
+
+         <button type="button" 
+            class="btn btn-outline-success btn-lg btn-start"
+            onclick="startGame()">
+        <b>Start</b> 
+    </button>
+    </div>
+   
 
     <!-- Optional JavaScript -->
-    <script scr="js/index.js"></script>
+    <script src="js/index.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
