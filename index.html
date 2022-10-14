@@ -37,13 +37,13 @@
                 <a class="nav-link active" aria-current="page" href="#" onclick="reset()">Reset</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">History</a>
+                <a class="nav-link" href="#" onclick="onDevelopingAlert()">History</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Add a dice</a>
+                <a class="nav-link" href="#" onclick="addDice()">Add a dice</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Remove a dice</a>
+                <a class="nav-link" href="#" onclick="onDevelopingAlert()">Remove a dice</a>
               </li>
             </ul>
           </div>
@@ -52,17 +52,18 @@
 
     <!-- Heading -->
     <h1>Dices Game</h1>
+
     <!-- Dices -->
     <div class="container">
-        <div class="row">
-            <div class="col-sm ">
+        <div class="row" id="dice-grid">
+            <div class="col-sm dice-member">
                 <p style="text-align: center;">
                     <input type="text" class="player-name" maxlength="15" placeholder="Player 1">
                     <i class="fa-solid fa-dice-one dice"></i>
                 </p>
 
             </div>
-            <div class="col-sm ">
+            <div class="col-sm dice-member">
                 <p style="text-align: center;">
                     <input type="text" class="player-name" maxlength="15" placeholder="Player 2">
                     <i class="fa-solid fa-dice-one dice"></i>
