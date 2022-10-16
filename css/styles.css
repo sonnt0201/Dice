@@ -56,7 +56,7 @@ input[type="text"]:hover {
     10px 0 80px #749f824b; 
 }
 
-.row .col-sm .col-sm-6 {
+.row .col-sm{
 
     border-radius: 1rem;
     margin: 0 3rem 2rem;

@@ -87,19 +87,3 @@ function reset() {
     "The winner is";
 }
 
-function addDice() {
-  let diceGrid = document.getElementById("dice-grid");
-  let diceMember = document.getElementsByClassName("dice-member")[0];
-  diceGrid.innerHTML += `
-  <div class="col-sm-6 dice-member">
-    <p style="text-align: center;">
-      <input type="text" class="player-name" maxlength="15" placeholder="Player 1">
-      <i class="fa-solid fa-dice-one dice"></i>
-  </p>
-  </div>
-  `;
-  console.log(diceGrid);
-}
-function onDevelopingAlert() {
-  alert("Chưa làm xong tính năng này bạn ôi ==.==");
-}
