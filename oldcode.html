@@ -1,0 +1,39 @@
+
+<!-- Heading -->
+<h1>Dices Game</h1>
+
+<!-- Dices -->
+<div class="container">
+    <div class="row" id="dice-grid">
+        <div class="col-sm dice-member">
+            <p style="text-align: center;">
+                <input type="text" class="player-name" maxlength="15" placeholder="Player 1">
+                <i class="fa-solid fa-dice-one dice"></i>
+            </p>
+
+        </div>
+        <div class="col-sm dice-member">
+            <p style="text-align: center;">
+                <input type="text" class="player-name" maxlength="15" placeholder="Player 2">
+                <i class="fa-solid fa-dice-one dice"></i>
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<!-- Winner Announcement -->
+<h3 class="winner-announcement">
+    The winner is:
+</h3>
+
+<!-- Controller -->
+<div>
+    <button type="button" class="btn btn-outline-secondary btn-reset" onclick="reset()">
+        <i class="fa-solid fa-repeat"></i>
+    </button>
+
+    <button type="button" class="btn btn-outline-success btn-lg btn-start" onclick="startGame()">
+        <b>Start</b>
+    </button>
+</div>
