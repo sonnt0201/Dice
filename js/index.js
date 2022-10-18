@@ -59,7 +59,9 @@ const model = new Model(2);
 // model.dices[2].value = 3;
 // console.log(model.dices[2].valueToString());
 class View {
-  constructor() {}
+  constructor() {
+
+  }
   root() {
     return document.getElementById("root");
   }
@@ -73,6 +75,11 @@ class View {
     this.root().appendChild(element);
     return element;
   }
+  getElement(selector) {
+    const element = document.querySelectorAll(selector);
+    return element;
+  }
+  
 }
 
 const view = new View();
