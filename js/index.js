@@ -50,7 +50,6 @@ function dicing(times) {
       $(".dice")[dice.id].className = `fa-solid fa-dice-${getVal(val)} dice`;
     }
     //   Sort the results
-    result = dices.sort((a, b) => b.val - a.val);
     console.log(result);
 
     // dicing done
@@ -60,6 +59,7 @@ function dicing(times) {
 
 function winnerAnnouncement() {
   let text = "The winner is: ";
+  result = dices.sort((a, b) => b.val - a.val);
   for (const dice of result) {
     if (dice.val == result[0].val) {
       text += `${dice.name}, `;
@@ -101,6 +101,7 @@ $(document).ready(function () {
                 </p>
             </div>`
     );
+    result = dices; 
     layoutForGrid(dices.length);
     addListener ();
   });
@@ -110,6 +111,7 @@ $(document).ready(function () {
     if (dices.length == 2) return;
     $(".dice-member")[dices.length - 1].remove();
     dices.pop();
+    result = dices;
     layoutForGrid(dices.length);
     addListener ();
   });
